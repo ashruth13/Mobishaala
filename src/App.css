@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.main-container-mobile{
+  background-image: url("https://res.cloudinary.com/dgw2vopar/image/upload/f_auto,q_auto/rixoiacjj8q5gq6wdaha") ;
+  background-size: cover;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  max-height: max-content;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display : flex;
+  width : 92vw;
+}
+.main-container-desktop{
+  display: none;
+}
+
+.whatsapp-container{
+  background-color: white;
+  height : 20px;
+  width : 20px;
+  border-radius: 50%;
+}
+.paragraph-subhead{
+  color : white;
+  font-size: 22px;
+  font-weight: 500;
+}
+.span-subhead{
+  color : gold;
+}
+.para{
+  font-weight : 18px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.whatsapp{
+  cursor: pointer;
+  background-color: #0cc444;
+  color : white;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 5px;
+  padding-right: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.whatsapp-image{
+  height : 40px;
+}
+.frame{
+  border-radius: 10px;
+  border: none;
+}
+.common-button{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(204, 28, 28);
+  color :white;
+  border : none;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.footer-span{
+  font-weight: 600;
+}
+.footer-subhead{
+  font-weight: 600;
+  font-size: 24px;
+}
+.footer-text{
+  font-size: 18px;
+}
+.main-head{
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 40px;
+  text-shadow : 2px 4px black;
+}
+.no-style-link{
+  text-decoration: none;
+  color : white;
+  font-size: 18px;
+}
+.no-style-para{
+  margin: 0px;
+  padding: 0px;
+}
+.footer{
+  background-color: rgb(180, 24, 24);
+  margin-left: -4vw;
+  margin-right: -4vw;
+  padding: 4vw;
+  color: white
+}
+.container-center{
+  color : white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+
+@media(min-width : 500px){
+
+  .main-container-mobile{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .paragraph-subhead{
+    font-size: 24px;
+  }
+  .main-container-desktop{
+    display: flex;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
+    min-height: 85vh;
+    height: max-content;
+    background-size: cover;
+    background-image: url("https://res.cloudinary.com/dgw2vopar/image/upload/f_auto,q_auto/rixoiacjj8q5gq6wdaha");
+  }
+  .main-head{
+    color : white;
+    font-size: 58px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  .desktop-one{
+    width : 40vw;
+  }
+  .dektop-flex{
+    display: flex;
+  }
+  .desktop-two{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .frame{
+    width : 40vw;
+    height: 40vh;
+    border-radius: 10px;
+  }
+  .common-button{
+    font-size: 24px;
+    padding: 10px;
+  }
+  .para{
+    font-size: 24px;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+  }
+  li{
+    color :white;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  ul{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 20px;
+  }
+  .whatsapp{
+    margin-top: 20px;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 24px;
   }
 }
